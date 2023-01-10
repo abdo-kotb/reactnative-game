@@ -3,6 +3,7 @@ import { FC, useState } from 'react'
 import { Alert, StyleSheet, TextInput, View } from 'react-native'
 
 import PrimaryButton from '../components/Primary.button'
+import COLORS from '../constants/colors'
 
 const StartGameScreen: FC<{ onPickNumber: (num: number) => void }> = ({
   onPickNumber,
@@ -63,7 +64,7 @@ const styles = StyleSheet.create({
     marginTop: 100,
     marginHorizontal: 24,
     padding: 16,
-    backgroundColor: '#3b021f',
+    backgroundColor: COLORS.primiary[800],
     borderRadius: 8,
     // android-specific shadow
     elevation: 4,
@@ -82,9 +83,9 @@ const styles = StyleSheet.create({
     height: 50,
     width: 64,
     fontSize: 32,
-    borderBottomColor: '#ddb52f',
+    borderBottomColor: COLORS.accent[500],
     borderBottomWidth: 2,
-    color: '#ddb52f',
+    color: COLORS.accent[500],
     marginVertical: 8,
     fontWeight: 'bold',
     textAlign: 'center',

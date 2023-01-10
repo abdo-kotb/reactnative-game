@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import COLORS from '../constants/colors'
 
 interface Props {
   children: string
@@ -15,10 +16,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#ddb52f',
+    color: COLORS.accent[500],
     textAlign: 'center',
     borderWidth: 2,
-    borderColor: '#ddb52f',
+    borderColor: COLORS.accent[500],
     padding: 12,
   },
 })

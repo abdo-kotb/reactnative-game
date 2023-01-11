@@ -1,9 +1,9 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import { Pressable, StyleSheet, Text, View } from 'react-native'
-import COLORS from '../constants/colors'
+import COLORS from '../../constants/colors'
 
 interface Props {
-  children: string
+  children: ReactNode
   onPress: () => void
 }
 

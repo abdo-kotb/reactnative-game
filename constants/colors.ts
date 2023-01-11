@@ -8,6 +8,12 @@ const COLORS = {
   accent: {
     500: '#ddb52f',
   },
+  white: {
+    default: '#ffffff',
+  },
+  black: {
+    default: '#000000',
+  },
 }
 
 export default COLORS
